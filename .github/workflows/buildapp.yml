@@ -16,7 +16,7 @@ jobs:
           node-version: '18.15.0'
       
       - name: Install dependencies
-        working-directory: ./
+        working-directory: ./ci-cd-react-app
         run: npm install
         
       - name: Set environment variable
