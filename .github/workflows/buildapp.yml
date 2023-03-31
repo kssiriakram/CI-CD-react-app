@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: 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
+          token: ${{ secrets.GITHUB_TOKEN }} #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
           branch: deploy # The branch the action should deploy to.
           folder: ./ci-cd-react-app/build # The folder the action should deploy.
           single-commit: true
